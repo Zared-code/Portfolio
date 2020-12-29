@@ -102,7 +102,8 @@ p {
                         text-transform: uppercase;
                         padding: 20px;
                         display: block;
-                        &::after{
+
+                        &::after {
                             content: attr(data-after);
                             position: absolute;
                             top: 50%;
@@ -115,12 +116,24 @@ p {
                             transition: 0.3s ease letter-spacing;
                         }
                     }
-                    li:hover{
-                        a::after{
-                            transform: translate(-50%, -50%) scale(1);
-                            letter-spacing: initial;
+                    li:hover {
+                        a {
+                            color: crimson;
+                            &::after {
+                                transform: translate(-50%, -50%) scale(1);
+                                letter-spacing: initial;
+                            }
                         }
                     }
+                }
+                .hamburger {
+                    z-index: 100;
+                    height: 60px;
+                    width: 60px;
+                    display: inline-block;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    position: relative;
                 }
             }
         }
