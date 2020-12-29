@@ -60,17 +60,17 @@ p {
 
 /* HEADER SECTION */
 
-#header{
+#header {
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0%;
     width: 100vw;
     height: auto;
-    .header{
+    .header {
         min-height: 8vh;
         background-color: rgba(31, 30, 30, 0.24);
-        .navbar{
+        .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -78,8 +78,8 @@ p {
             height: 100%;
             min-width: 1300px;
             padding: 0 10px;
-            &__list{
-                ul{
+            &__list {
+                ul {
                     list-style: none;
                     position: absolute;
                     background-color: rgb(31, 30, 30);
@@ -93,6 +93,34 @@ p {
                     align-items: center;
                     z-index: 1;
                     overflow-x: hidden;
+                    a {
+                        font-size: 2.5rem;
+                        font-weight: 550;
+                        letter-spacing: 0.2rem;
+                        text-decoration: none;
+                        color: white;
+                        text-transform: uppercase;
+                        padding: 20px;
+                        display: block;
+                        &::after{
+                            content: attr(data-after);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) scale(0);
+                            color: rgba(240, 248, 255, 0.021);
+                            font-size: 9rem;
+                            letter-spacing: 50px;
+                            z-index: -1;
+                            transition: 0.3s ease letter-spacing;
+                        }
+                    }
+                    li:hover{
+                        a::after{
+                            transform: translate(-50%, -50%) scale(1);
+                            letter-spacing: initial;
+                        }
+                    }
                 }
             }
         }
@@ -496,10 +524,11 @@ p {
                 margin: 0;
                 width: 100%;
                 border-radius: 0;
-                &__info, &__image{
+                &__info,
+                &__image {
                     height: 100%;
                 }
-                &:nth-child(even){
+                &:nth-child(even) {
                     flex-direction: row-reverse;
                 }
             }
@@ -508,22 +537,22 @@ p {
     /* END OF PROJECTS */
 
     /* ABOUT */
-    #about{
-        .about{
+    #about {
+        .about {
             flex-direction: row;
-            .column-left{
+            .column-left {
                 width: 600px;
                 height: 400px;
                 padding-left: 60px;
-                .about-image{
-                    &::after{
+                .about-image {
+                    &::after {
                         top: 34px;
                         left: -45px;
                         border: 10px crimson solid;
                     }
                 }
             }
-            .column-right{
+            .column-right {
                 text-align: justify;
                 padding: 30px;
             }
@@ -532,32 +561,32 @@ p {
     /* END OF ABOUT */
 
     /* CONTACT */
-    #contact{
-        .contact{
+    #contact {
+        .contact {
             flex-direction: column;
             padding: 100px 0;
             align-items: center;
             justify-content: center;
             min-height: 20vh;
-            &-info{
+            &-info {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 margin: 0;
                 padding: 20px;
-                .contact__item{
+                .contact__item {
                     margin: 10px;
                     padding: 20px 10px;
                     flex-direction: row;
-                    &__icon{
+                    &__icon {
                         height: 100px;
                         width: 100px;
-                        img{
+                        img {
                             object-fit: contain;
                         }
                     }
-                    &__text{
+                    &__text {
                         width: 100%;
                         text-align: left;
                         padding-left: 20px;
@@ -571,26 +600,24 @@ p {
 
 /* END OF MEDIA QUERY FOR TABLET */
 
-
 /* MEDIA QUERY FOR DESKTOP */
 
-@media only screen and (min-width: 1200px){
-  
-    /* SERVICES */   
-    #service{
-        .service{
-            &__header{
+@media only screen and (min-width: 1200px) {
+    /* SERVICES */
+    #service {
+        .service {
+            &__header {
                 width: 700px;
             }
-            &__cards{
-                &__item{
+            &__cards {
+                &__item {
                     flex-basis: 22%;
                     margin: 1.5%;
                 }
             }
         }
-    } 
-    /* END OF SERVICES */    
+    }
+    /* END OF SERVICES */
 }
 
 /* END OF MEDIA QUERY FOR DESKTOP */
