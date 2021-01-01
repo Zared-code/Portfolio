@@ -6,7 +6,15 @@
   "scripts": {
     "sass": "sass --watch SASS/main.scss:CSS/style.css --style compressed"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zared-code/Portfolio.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zared-code/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Zared-code/Portfolio#readme"
 }
