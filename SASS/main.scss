@@ -370,7 +370,6 @@ p {
             margin: 20px auto;
             overflow: hidden;
             border-radius: 10px;
-            max-height: 650px;
             &__info {
                 padding: 30px;
                 flex-basis: 50%;
@@ -396,10 +395,9 @@ p {
             }
             &__image {
                 flex-basis: 50%;
-                height: 50%;
-                width: 100%;
                 overflow: hidden;
                 position: relative;
+                max-height: 300px;
                 &::after {
                     content: "";
                     position: absolute;
