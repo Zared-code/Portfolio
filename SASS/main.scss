@@ -367,7 +367,6 @@ p {
             align-items: center;
             justify-content: center;
             width: 80%;
-            height: 700px;
             margin: 20px auto;
             overflow: hidden;
             border-radius: 10px;
@@ -395,7 +394,6 @@ p {
                 }
             }
             &__image {
-                flex-basis: 50%;
                 width: 100%;
                 overflow: hidden;
                 position: relative;
