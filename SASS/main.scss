@@ -370,7 +370,7 @@ p {
             margin: 20px auto;
             overflow: hidden;
             border-radius: 10px;
-            max-height: 600px;
+            max-height: 650px;
             &__info {
                 padding: 30px;
                 flex-basis: 50%;
@@ -395,9 +395,8 @@ p {
                 }
             }
             &__image {
-                flex-basis: 50%;
+                flex-basis: 60%;
                 height: 50%;
-                min-height: 250px;
                 width: 100%;
                 overflow: hidden;
                 position: relative;
