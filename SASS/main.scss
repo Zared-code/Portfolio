@@ -397,6 +397,7 @@ p {
             &__image {
                 flex-basis: 50%;
                 height: 50%;
+                min-height: 250px;
                 width: 100%;
                 overflow: hidden;
                 position: relative;
